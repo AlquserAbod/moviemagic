@@ -7,13 +7,13 @@ import React, { useState } from 'react'
 function ResulteCard({movie}) {
     const MovieContext = useMovieContext();
 
-    const [inWatchlist, setInWatchlist] = useState(
-        MovieContext.watchlist.find(
+    const [inWatched, setInWatched] = useState(
+        MovieContext.watched.find(
             (i) => i.imdbID === movie.imdbID
         )
     );
-    const [inWatched, setInWatched] = useState(
-        MovieContext.watched.find(
+    const [inWatchlist, setInWatchlist] = useState(
+        MovieContext.watchlist.find(
             (i) => i.imdbID === movie.imdbID
         )
     );
@@ -34,6 +34,7 @@ function ResulteCard({movie}) {
         })
         
         setInWatched(!inWatched)
+        setInWatchlist(inWatched)
     }
 
     return (
@@ -56,7 +57,7 @@ function ResulteCard({movie}) {
                 </div>
 
                 <div className="controls">
-                    <button className="btn" onClick={() => {handleWatchlistAction()}}>
+                    <button className="btn" onClick={() => {handleWatchlistAction()}} disabled={inWatched}>
                         {!inWatchlist ? "Add to watchlist": "Remove from watchlist"}
                     </button>
 

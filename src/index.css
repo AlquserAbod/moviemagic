@@ -35,6 +35,16 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
+@media (max-width: 300px) {
+  * {
+    font-size: 20vw;
+  }
+}
+@media (max-width: 575px) {
+  * {
+    font-size: 5vw;
+  }
+}
 
 @media (min-width: 768px) {
   .container {

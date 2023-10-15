@@ -7,7 +7,11 @@
 }
 
 
-
+.result-card .poster-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .result-card .poster-wrapper img,
 .filter-poster {
     width: 75px;
