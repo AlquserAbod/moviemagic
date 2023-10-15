@@ -14,7 +14,7 @@ function App() {
         <Header />
         <Routes>
           
-          <Route index path='/' element={<Add />} />
+          <Route exact path='/' element={<Add />} />
           <Route path='/add' element={<Add/>} />
           <Route path='/watchlist' element={<Watchlist/>} />
           <Route path='/watched' element={<Watched/>} />
