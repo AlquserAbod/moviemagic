@@ -8,7 +8,7 @@ import Watchlist from './pages/Watchlist/Watchlist'
 import  ContextProvider  from './Context/GlobelContext';
 function App() {
   return (
-    <BrowserRouter basename='moviemagice'>
+    <BrowserRouter basename='moviemagic'>
 
       <ContextProvider>
         <Header />
