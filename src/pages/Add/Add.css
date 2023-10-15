@@ -1,0 +1,20 @@
+.add-content {
+    padding: 50px 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.add-content .input-container input {
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: var(--light-color);
+    font-size: 1.25rem;
+}
+.results {
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+    
+}

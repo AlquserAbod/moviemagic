@@ -1,0 +1,10 @@
+{
+    "api" : {
+        "url" : "https://www.omdbapi.com",
+        "apikey": "9b37d86f"
+    },
+    "localStorage" : {
+        "WatchListStorageKey" : "watchlist",
+        "WatchedListStorageKey": "watched"
+    }
+}

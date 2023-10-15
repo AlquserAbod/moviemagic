@@ -1,0 +1,41 @@
+.header {
+    background-color: var(--primary-color);
+    padding: 10px 0;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header  .nav-link a {
+    font-size: 1.25rem;
+    transition: all .3s ease;
+}
+.header  .nav-link a:hover {
+    opacity: .7s;
+}
+
+.header .logo a {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.header .nav-links {
+    display: flex;
+    align-items: center;
+}
+.header .nav-links .nav-link {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.header .nav-links .nav-link:last-child{
+    margin-right: 0px;
+}
+
+@media (min-width: 575px) {
+    .header .nav-links .nav-link {
+        display: inline-block;
+        margin-right: 0 5px;
+    }
+  }
