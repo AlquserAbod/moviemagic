@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Add from './pages/Add/Add'
 import Watched from './pages/Watched/Watched'
@@ -8,7 +8,7 @@ import Watchlist from './pages/Watchlist/Watchlist'
 import  ContextProvider  from './Context/GlobelContext';
 function App() {
   return (
-    <BrowserRouter basename='/moviemagic'>
+    <HashRouter basename='/moviemagic'>
 
       <ContextProvider>
         <Header />
@@ -20,7 +20,7 @@ function App() {
           <Route path='/watched' element={<Watched/>} />
         </Routes>
       </ContextProvider>
-    </BrowserRouter>
+    </HashRouter>
 
   );
 }
